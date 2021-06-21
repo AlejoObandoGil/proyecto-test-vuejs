@@ -26,7 +26,11 @@ class PeopleController extends Controller
 	public function update(Request $request, People $People)
 	{
 		$People->update($request->all());
-		return back();
+
+		return response()->json([
+			'person' => $people,
+			'saved' => true
+		]);
 	}
 
 	public function delete(People $People)

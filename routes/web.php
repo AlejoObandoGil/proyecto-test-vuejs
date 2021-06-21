@@ -3,17 +3,6 @@
 use App\Models\Son;
 use App\Models\People;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 // GET, POSt PUT DLETE, ANY
 
 // Route::get('/hola', function(){

@@ -15,6 +15,8 @@ class AddEmailToPeoplesTable extends Migration
     {
         Schema::table('people', function (Blueprint $table) {
             $table->string('email')->after('phone');
+			$table->string('address')->after('email');
+
         });
     }
 

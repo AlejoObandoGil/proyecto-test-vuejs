@@ -16,8 +16,9 @@
 			<label>Address</label>
 			<input type="text" class="form-control" v-model="person.address" required>
 		</div>
+
 		<div class="text-center">
-			<button type="submit" class="btn btn-primary">Save</button>
+			<button type="submit" class="btn btn-primary">Update</button>
 		</div>
 	</form>
 </template>
@@ -44,8 +45,8 @@ export default {
 						email: '',
 						address: ''
 					}
-					this.$parent.all_people.push(res.data.person)
-					alert('Persona guardada')
+					// this.$parent.all_people.push(res.data.person)
+					alert('Persona actualizada!')
 				}
 			})
 		}

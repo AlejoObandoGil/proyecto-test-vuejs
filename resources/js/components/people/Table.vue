@@ -4,6 +4,8 @@
 			<tr>
 				<th>Full Name</th>
 				<th>Phone</th>
+				<th>Email</th>
+				<th>Address</th>
 				<th>Actions</th>
 			</tr>
 		</thead>
@@ -11,6 +13,8 @@
 			<tr v-for="(person, index) in all_people" :key="index">
 				<td>{{ person.full_name }}</td>
 				<td>{{ person.phone }}</td>
+				<td>{{ person.email }}</td>
+				<td>{{ person.address }}</td>
 				<td>
 					<a :href="`/People/Edit/${person.id}`" class="btn btn-success">Edit</a>
 					<a href="#" class="btn btn-danger" @click.prevent="deletePerson(person, index)">Delete</a>
